@@ -1,0 +1,100 @@
+/* Reset CSS to browser defaults
+in the following lines:
+*/
+/*
+header,
+footer,
+nav,
+main,
+article,
+section,
+figure,
+figcaption,
+h1,
+h2,
+h3,
+ul,
+li,
+body,
+div,
+p,
+img {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+*/
+/* part one style */
+.main {
+  background: url("images/2.png"), url("images/80.png");
+  background-position: left, right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.main img {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+.main li {
+  display: inline;
+}
+.main li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.main li a:hover {
+  background-color: maroon;
+  border-radius: 25px;
+  padding: 10px;
+}
+.main nav {
+  float: left;
+}
+.main figure {
+  float: left;
+}
+.main h1 {
+  clear: both;
+}
+.main p {
+  text-align: left;
+  width: 420px;
+  color: white;
+}
+.main h1 {
+  color: white;
+  font-size: 400%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.main figure,
+nav {
+  padding-top: 2%;
+}
+/* part two style */
+.box {
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.places::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.places figcaption {
+  padding: 4px;
+  font-weight: bold;
+}
+.places figure {
+  text-align: center;
+  padding: 4px;
+}
+.places {
+  background-color: rgb(212, 211, 211);
+}
