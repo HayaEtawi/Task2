@@ -1,0 +1,341 @@
+/* Reset CSS to browser defaults
+in the following lines:
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+header,
+footer,
+nav,
+main,
+article,
+section,
+figure,
+figcaption,
+h1,
+h2,
+h3,
+ul,
+li,
+body,
+div,
+p,
+img {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* part one style */
+
+.main {
+  background: url("images/2.png"), url("images/12.jpg");
+  background-position: left, right;
+  background-size: 80%, 40%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.main li {
+  display: inline;
+}
+
+.main li a {
+  color: antiquewhite;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 5px;
+  margin-left: 2cm;
+}
+.main li a:hover {
+  background-color: maroon;
+  border-radius: 30px;
+}
+.main nav {
+  float: left;
+  margin-top: 0.5cm;
+  padding-top: 1.5cm;
+  padding-right: 1.5cm;
+}
+.main p {
+  margin-top: 0.5cm;
+  text-align: left;
+  color: antiquewhite;
+  margin-bottom: 1.5cm;
+  width: 425px;
+  text-align: justify;
+  padding-left: 1.5cm;
+}
+.main h1 {
+  clear: both;
+  color: antiquewhite;
+  font-size: 500%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 5cm;
+  padding-left: 1.5cm;
+}
+.main img {
+  float: left;
+  height: 3cm;
+  width: 4cm;
+  padding-top: 1.5cm;
+  padding-left: 1.5cm;
+}
+.main button {
+  background-color: black;
+  color: antiquewhite;
+  border: none;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 2.5cm;
+  margin-left: 1.5cm;
+  border: none;
+}
+/* part two style */
+.places h2 {
+  font-size: 200%;
+  font-weight: bold;
+  margin-left: 0.5cm;
+  padding-bottom: 6px;
+  padding-top: 0.5cm;
+  width: 60%;
+  border-bottom: solid maroon;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.places::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.places figcaption {
+  padding: 4px;
+  font-weight: bold;
+}
+.places figure {
+  text-align: center;
+  padding: 4px;
+}
+.places figure > img {
+  width: 2cm;
+  height: 2cm;
+}
+.places {
+  background-color: rgb(212, 211, 211);
+}
+/* part three style */
+.GetOut__content {
+  background-color: black;
+  /* background-image: url("images/6.png");*/
+  /*background-repeat: no-repeat;*/
+  height: 9cm;
+}
+.GetOut > img {
+  height: 9cm;
+  width: 7cm;
+  float: left;
+}
+.GetOut__content > p {
+  color: antiquewhite;
+  width: 630px;
+  margin-left: 1cm;
+  margin-bottom: 1cm;
+}
+.GetOut__content > h1 {
+  color: antiquewhite;
+  font-size: 500%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 0;
+  margin-left: 1cm;
+}
+.GetOut__content > button {
+  background-color: crimson;
+  color: black;
+  border: 0;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 2.5cm;
+  font-weight: bold;
+  margin-left: 1cm;
+}
+.GetOut__content div {
+  background-color: black;
+  margin-right: 0;
+  height: 9cm;
+  margin: 0;
+}
+.GetOut div {
+  float: left;
+  margin-left: 0;
+  height: 9cm;
+  width: 30%;
+  clear: right;
+}
+/* part four style */
+
+.aventure {
+  background-color: black;
+  background-image: url("images/7.png");
+  background-repeat: no-repeat;
+}
+.aventure h1 {
+  padding-top: 1.5cm;
+  font-size: 990%;
+  color: antiquewhite;
+  text-align: center;
+}
+.aventure p {
+  color: antiquewhite;
+  text-align: left;
+  padding-left: 7cm;
+}
+.aventure p:nth-child(3) {
+  color: antiquewhite;
+  padding-bottom: 3cm;
+}
+/* part five style */
+.women {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("images/7.png");
+}
+.women h1 {
+  color: antiquewhite;
+  font-size: 300%;
+  float: right;
+}
+.women span {
+  font-size: 200%;
+}
+.women p {
+  color: antiquewhite;
+  float: right;
+}
+.women img {
+  width: 50%;
+  height: 15cm;
+}
+/* part six style */
+.discover {
+  background-image: url("images/7.png");
+  background-color: crimson;
+}
+.discover h1 {
+  color: antiquewhite;
+  font-size: 500%;
+  padding-left: 2cm;
+  padding-top: 2cm;
+}
+.discover p {
+  color: antiquewhite;
+  padding-left: 2cm;
+  padding-bottom: 2cm;
+}
+/* part seven style */
+.tours {
+  background-image: url("images/7.png");
+  background-color: gainsboro;
+}
+.tours h1 {
+  color: black;
+  font-size: 500%;
+  padding-left: 2cm;
+  padding-top: 1cm;
+}
+/* part eight style */
+.Polar {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url(images/9.png);
+  background-position-x: right;
+  background-size: contain;
+}
+.Polar h1 {
+  color: antiquewhite;
+  font-size: 200%;
+}
+.Polar p {
+  color: antiquewhite;
+  width: 400px;
+}
+.Polar > button {
+  background-color: crimson;
+  color: black;
+  border: 0;
+  display: inline-block;
+  margin-bottom: 2.5cm;
+  font-weight: bold;
+  margin-left: 1cm;
+}
+/* part nine style */
+
+/* part ten style */
+.TitleHere {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("images/11.png");
+  background-position: center;
+}
+.TitleHere h1 {
+  color: antiquewhite;
+  font-size: 300%;
+  text-align: center;
+  padding-top: 3cm;
+}
+.TitleHere p {
+  color: antiquewhite;
+  text-align: center;
+  margin-bottom: 1cm;
+}
+.TitleHere button {
+  background-color: crimson;
+  color: black;
+  border: 0;
+  display: inline-block;
+  margin-bottom: 2.5cm;
+  font-weight: bold;
+  margin-left: 0;
+}
+.TitleHere form {
+  padding: 100px;
+}
+/* Last part syle(footer) */
+.About {
+  background-color: crimson;
+  background-repeat: no-repeat;
+  height: 6cm;
+}
+.About img {
+  padding-top: 1cm;
+  padding-left: 2cm;
+}
+.About table {
+  margin: 25px 40px 40px 100px;
+  float: right;
+}
+th,
+td {
+  text-align: left;
+  padding-right: 3cm;
+}
+th {
+  height: 50px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .main,
+  .places {
+  }
+}
