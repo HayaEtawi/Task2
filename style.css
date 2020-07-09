@@ -212,6 +212,10 @@ img {
   color: antiquewhite;
   padding-bottom: 3cm;
 }
+.aventure h1:hover {
+  font-size: 88px;
+  font-size-adjust: 20px;
+}
 /* part five style */
 .women {
   background-color: black;
@@ -253,6 +257,10 @@ img {
   color: antiquewhite;
   padding-left: 2cm;
   padding-bottom: 4cm;
+}
+.discover h1:hover {
+  font-size: 700%;
+  font-size-adjust: 20px;
 }
 /* part seven style */
 .tours {
