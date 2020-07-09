@@ -1,0 +1,460 @@
+/* Reset CSS to browser defaults
+in the following lines:
+*/
+
+header,
+footer,
+nav,
+main,
+article,
+section,
+figure,
+figcaption,
+h1,
+h2,
+h3,
+ul,
+li,
+body,
+div,
+p,
+img {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* part one style */
+
+.main {
+  background: url("images/2.png"), url("images/12.jpg");
+  background-position: left, right;
+  background-size: 80%, 40%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.main li {
+  display: inline;
+}
+
+.main li a {
+  color: antiquewhite;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 5px;
+  margin-left: 2cm;
+}
+.main li a:hover {
+  background-color: maroon;
+  border-radius: 30px;
+}
+.main nav {
+  float: left;
+  margin-top: 0.5cm;
+  padding-top: 1.5cm;
+  padding-right: 1.5cm;
+}
+.main p {
+  margin-top: 0.5cm;
+  text-align: left;
+  color: antiquewhite;
+  margin-bottom: 1.5cm;
+  width: 425px;
+  text-align: justify;
+  padding-left: 1.5cm;
+}
+.main h1 {
+  clear: both;
+  color: antiquewhite;
+  font-size: 500%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 2cm;
+  padding-left: 1.5cm;
+}
+.main img {
+  float: left;
+  height: 3cm;
+  width: 5cm;
+  padding-top: 1.5cm;
+  padding-left: 1.5cm;
+}
+.main button {
+  background-color: black;
+  color: antiquewhite;
+  border: none;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 2.5cm;
+  margin-left: 1.5cm;
+  border: none;
+}
+.main ul:nth-child(5) {
+  float: right;
+}
+.main__icons {
+  position: absolute;
+  top: 2cm;
+  right: 4cm;
+  color: rgb(211, 59, 59);
+}
+/* part two style */
+.places h2 {
+  font-size: 200%;
+  font-weight: bold;
+  margin-left: 1cm;
+  padding-bottom: 6px;
+  padding-top: 1.5cm;
+  width: 60%;
+  border-bottom: solid maroon;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.places::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.places figcaption {
+  padding: 4px;
+  font-weight: bold;
+}
+.places figure {
+  text-align: center;
+  padding: 4px;
+}
+.places figure > img {
+  width: 2cm;
+  height: 2cm;
+}
+.places {
+  background-color: rgb(212, 211, 211);
+  height: auto;
+}
+/* part three style */
+.GetOut {
+  background-color: black;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+.GetOut > img {
+  width: 7cm;
+  float: left;
+  max-width: 100%;
+  height: auto;
+  margin-right: 6cm;
+}
+.GetOut > p {
+  color: antiquewhite;
+  width: 1000px;
+  margin-left: 1cm;
+  margin-bottom: 1cm;
+}
+.GetOut > h1 {
+  color: antiquewhite;
+  font-size: 500%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 1cm;
+}
+.GetOut > button {
+  background-color: crimson;
+  color: black;
+  border: 0;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 2.5cm;
+  font-weight: bold;
+}
+
+.GetOut h1:nth-child(2) {
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+.GetOut h1:nth-child(3) {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* part four style */
+
+.aventure {
+  background-color: black;
+  background-image: url("images/7.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aventure h1 {
+  padding-top: 1.5cm;
+  font-size: 990%;
+  color: antiquewhite;
+  text-align: center;
+}
+.aventure p {
+  color: antiquewhite;
+  text-align: left;
+  padding-left: 7cm;
+}
+.aventure p:nth-child(3) {
+  color: antiquewhite;
+  padding-bottom: 3cm;
+}
+/* part five style */
+.women {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("images/7.png");
+}
+.women h1 {
+  padding-top: 4cm;
+  color: antiquewhite;
+  font-size: 100px;
+}
+.women span {
+  font-size: 50px;
+}
+.women p {
+  padding-bottom: 5cm;
+  color: antiquewhite;
+}
+.women img {
+  float: left;
+  max-width: 100%;
+  margin-right: 0.5cm;
+  height: 15.5cm;
+  width: 20cm;
+}
+/* part six style */
+.discover {
+  background-image: url("images/7.png");
+  background-color: crimson;
+  background-position: center;
+}
+.discover h1 {
+  color: antiquewhite;
+  font-size: 500%;
+  padding-left: 2cm;
+  padding-top: 4cm;
+}
+.discover p {
+  color: antiquewhite;
+  padding-left: 2cm;
+  padding-bottom: 4cm;
+}
+/* part seven style */
+.tours {
+  background-image: url("images/11.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: gainsboro;
+  background-size: center;
+}
+.tours h1 {
+  color: black;
+  font-size: 500%;
+  padding-left: 2cm;
+  padding-top: 1cm;
+}
+/* part eight style */
+.Polar {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("images/9.png");
+  background-position-x: right;
+  background-size: contain;
+}
+.Polar h1 {
+  color: antiquewhite;
+  font-size: 500%;
+  padding-top: 2cm;
+  padding-left: 2cm;
+  padding-bottom: 1cm;
+}
+.Polar p {
+  color: antiquewhite;
+  width: 670px;
+  padding-left: 2cm;
+}
+.Polar > button {
+  background-color: crimson;
+  color: black;
+  border: 0;
+  display: inline-block;
+  margin-bottom: 2.5cm;
+  font-weight: bold;
+  margin-left: 2cm;
+  border-radius: 12px;
+  padding: 10px 30px;
+  margin-bottom: 2.5cm;
+  font-weight: bold;
+  margin-top: 1cm;
+}
+.Polar__icons {
+  color: antiquewhite;
+  padding-left: 2cm;
+  padding-top: 1cm;
+}
+
+/* part nine style */
+.GetOutNow {
+  background-image: url("images/10.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: contain;
+  background-color: crimson;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.GetOutNow > p {
+  color: antiquewhite;
+  width: 600px;
+  margin-left: 2cm;
+  margin-bottom: 1cm;
+  margin-left: 18cm;
+}
+.GetOutNow > h1 {
+  color: antiquewhite;
+  font-size: 500%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 1cm;
+  margin-left: 2cm;
+  text-align: left;
+  margin-left: 18cm;
+}
+.GetOutNow > button {
+  background-color: black;
+  color: antiquewhite;
+  border: 0;
+  display: inline-block;
+  margin-bottom: 2.5cm;
+  font-weight: bold;
+  margin-left: 2cm;
+  border-radius: 12px;
+  padding: 10px 30px;
+  margin-bottom: 2.5cm;
+  font-weight: bold;
+  margin-top: 1cm;
+  margin-left: 30cm;
+}
+
+.GetOutNow h1:nth-child(2) {
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+.GetOutNow h1:nth-child(3) {
+  padding-top: 0;
+  margin-top: 0;
+}
+.GetOutNow__icons {
+  color: antiquewhite;
+  display: inline;
+  padding: 720px;
+}
+
+/* part ten style */
+.TitleHere {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("images/11.png");
+  background-position: center;
+}
+.TitleHere h1 {
+  color: antiquewhite;
+  font-size: 300%;
+  text-align: center;
+  padding-top: 3cm;
+  margin-bottom: 1cm;
+}
+.TitleHere p {
+  color: antiquewhite;
+  margin-bottom: 1cm;
+  text-align: center;
+}
+.TitleHere button {
+  background-color: crimson;
+  color: antiquewhite;
+  font-weight: bold;
+  margin-bottom: 2.5cm;
+  margin-left: 0;
+  width: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+}
+.TitleHere form {
+  padding: 100px;
+  text-align: center;
+}
+input[type="email"] {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 30px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  margin-right: 0;
+}
+
+/* Last part syle(footer) */
+.About {
+  background-color: crimson;
+  background-repeat: no-repeat;
+  height: 6cm;
+}
+.About img {
+  padding-top: 1cm;
+  padding-left: 2cm;
+}
+.About table {
+  margin: 25px 40px 40px 100px;
+  float: right;
+}
+th,
+td {
+  text-align: left;
+  padding-right: 3cm;
+}
+th {
+  height: 50px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .main,
+  .places {
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
