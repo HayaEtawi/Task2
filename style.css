@@ -1,7 +1,7 @@
 /* Reset CSS to browser defaults
 in the following lines:
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
 header,
 footer,
 nav,
@@ -25,7 +25,9 @@ img {
   vertical-align: baseline;
   font-family: "Roboto", sans-serif;
 }
-
+body {
+  width: 100%;
+}
 * {
   box-sizing: border-box;
 }
@@ -74,13 +76,13 @@ img {
   color: antiquewhite;
   font-size: 500%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-top: 5cm;
+  padding-top: 2cm;
   padding-left: 1.5cm;
 }
 .main img {
   float: left;
   height: 3cm;
-  width: 4cm;
+  width: 5cm;
   padding-top: 1.5cm;
   padding-left: 1.5cm;
 }
@@ -99,9 +101,9 @@ img {
 .places h2 {
   font-size: 200%;
   font-weight: bold;
-  margin-left: 0.5cm;
+  margin-left: 1cm;
   padding-bottom: 6px;
-  padding-top: 0.5cm;
+  padding-top: 1.5cm;
   width: 60%;
   border-bottom: solid maroon;
   font-family: Arial, Helvetica, sans-serif;
@@ -132,33 +134,35 @@ img {
 }
 .places {
   background-color: rgb(212, 211, 211);
+  height: auto;
 }
 /* part three style */
-.GetOut__content {
+.GetOut {
   background-color: black;
-  /* background-image: url("images/6.png");*/
-  /*background-repeat: no-repeat;*/
-  height: 9cm;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
 .GetOut > img {
-  height: 9cm;
   width: 7cm;
   float: left;
+  max-width: 100%;
+  height: auto;
+  margin-right: 6cm;
 }
-.GetOut__content > p {
+.GetOut > p {
   color: antiquewhite;
-  width: 630px;
+  width: 1000px;
   margin-left: 1cm;
   margin-bottom: 1cm;
 }
-.GetOut__content > h1 {
+.GetOut > h1 {
   color: antiquewhite;
   font-size: 500%;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin-bottom: 0;
-  margin-left: 1cm;
+  padding-top: 1cm;
 }
-.GetOut__content > button {
+.GetOut > button {
   background-color: crimson;
   color: black;
   border: 0;
@@ -167,21 +171,17 @@ img {
   padding: 10px;
   margin-bottom: 2.5cm;
   font-weight: bold;
-  margin-left: 1cm;
 }
-.GetOut__content div {
-  background-color: black;
-  margin-right: 0;
-  height: 9cm;
-  margin: 0;
+
+.GetOut h1:nth-child(2) {
+  padding-bottom: 0;
+  margin-bottom: 0px;
 }
-.GetOut div {
-  float: left;
-  margin-left: 0;
-  height: 9cm;
-  width: 30%;
-  clear: right;
+.GetOut h1:nth-child(3) {
+  padding-top: 0;
+  margin-top: 0;
 }
+
 /* part four style */
 
 .aventure {
@@ -244,8 +244,11 @@ img {
 }
 /* part seven style */
 .tours {
-  background-image: url("images/7.png");
+  background-image: url("images/11.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: gainsboro;
+  background-size: cover;
 }
 .tours h1 {
   color: black;
@@ -292,24 +295,39 @@ img {
   font-size: 300%;
   text-align: center;
   padding-top: 3cm;
+  margin-bottom: 1cm;
 }
 .TitleHere p {
   color: antiquewhite;
-  text-align: center;
   margin-bottom: 1cm;
+  text-align: center;
 }
 .TitleHere button {
   background-color: crimson;
-  color: black;
-  border: 0;
-  display: inline-block;
-  margin-bottom: 2.5cm;
+  color: antiquewhite;
   font-weight: bold;
+  margin-bottom: 2.5cm;
   margin-left: 0;
+  width: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
 }
 .TitleHere form {
   padding: 100px;
+  text-align: center;
 }
+input[type="email"] {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 30px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  margin-right: 0;
+}
+
 /* Last part syle(footer) */
 .About {
   background-color: crimson;
@@ -337,5 +355,23 @@ th {
 @media screen and (max-width: 700px) {
   .main,
   .places {
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
